@@ -1,0 +1,47 @@
+server:
+  port: 9000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+spring:
+  application:
+    name: edu-gateway-boot
+  cloud:
+    gateway:
+      routes:
+        - id: edu-routes-course # 路由名
+          uri: lb://edu-course-boot  # 去注册中心查找的微服务名
+          predicates: # 当断言成功后，交给某一个微服务处理时使用的是转发
+            - Path=/course/**
+          filters:
+            - StripPrefix=1   # 去掉uri中的第一部分
+        - id: edu-routes-comment
+          uri: lb://edu-comment-boot
+          predicates:
+            - Path=/comment/**
+          filters:
+            - StripPrefix=1
+        - id: edu-routes-order
+          uri: lb://edu-order-boot
+          predicates:
+            - Path=/order/**
+          filters:
+            - StripPrefix=1
+        - id: edu-routes-pay
+          uri: lb://edu-pay-boot
+          predicates:
+            - Path=/pay/**
+          filters:
+            - StripPrefix=1
+        - id: edu-routes-user
+          uri: lb://edu-user-boot
+          predicates:
+            - Path=/user/**
+          filters:
+            - StripPrefix=1

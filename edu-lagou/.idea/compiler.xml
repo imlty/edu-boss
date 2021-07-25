@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="edu-api" />
+        <module name="edu-user-boot" />
+        <module name="edu-gateway-boot" />
+        <module name="edu-order-boot" />
+        <module name="edu-lagou" />
+        <module name="edu-course-boot" />
+        <module name="edu-pay-boot" />
+        <module name="edu-eureka-boot" />
+        <module name="edu-comment-boot" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="edu-api" target="1.8" />
+      <module name="edu-comment-boot" target="1.8" />
+      <module name="edu-course-boot" target="1.8" />
+      <module name="edu-eureka-boot" target="1.8" />
+      <module name="edu-gateway-boot" target="1.8" />
+      <module name="edu-lagou" target="11" />
+      <module name="edu-order-boot" target="1.8" />
+      <module name="edu-pay-boot" target="1.8" />
+      <module name="edu-user-boot" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="edu-api" options="-parameters" />
+      <module name="edu-comment-boot" options="-parameters" />
+      <module name="edu-course-boot" options="-parameters" />
+      <module name="edu-eureka-boot" options="-parameters" />
+      <module name="edu-gateway-boot" options="-parameters" />
+      <module name="edu-lagou" options="-parameters" />
+      <module name="edu-order-boot" options="-parameters" />
+      <module name="edu-pay-boot" options="-parameters" />
+      <module name="edu-user-boot" options="-parameters" />
+    </option>
+  </component>
+</project>

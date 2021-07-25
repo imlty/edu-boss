@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/edu-api/edu-api.iml" filepath="$PROJECT_DIR$/edu-api/edu-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/edu-comment-boot/edu-comment-boot.iml" filepath="$PROJECT_DIR$/edu-comment-boot/edu-comment-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/edu-course-boot/edu-course-boot.iml" filepath="$PROJECT_DIR$/edu-course-boot/edu-course-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/edu-eureka-boot/edu-eureka-boot.iml" filepath="$PROJECT_DIR$/edu-eureka-boot/edu-eureka-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/edu-gateway-boot/edu-gateway-boot.iml" filepath="$PROJECT_DIR$/edu-gateway-boot/edu-gateway-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/edu-lagou.iml" filepath="$PROJECT_DIR$/edu-lagou.iml" />
+      <module fileurl="file://$PROJECT_DIR$/edu-order-boot/edu-order-boot.iml" filepath="$PROJECT_DIR$/edu-order-boot/edu-order-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/edu-pay-boot/edu-pay-boot.iml" filepath="$PROJECT_DIR$/edu-pay-boot/edu-pay-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/edu-user-boot/edu-user-boot.iml" filepath="$PROJECT_DIR$/edu-user-boot/edu-user-boot.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,24 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: edu-course-boot
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.1.141:3306/edu_course?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: 123456
+  redis:
+    host: 1.15.85.200
+    port: 6379
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.1.141:7001/eureka
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+mybatis-plus:
+  mapper-locations: classpath:mybatis/mapper/*.xml
